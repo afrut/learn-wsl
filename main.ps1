@@ -24,7 +24,9 @@ $DISTRIBUTION_FILE_PATH="D:\wsl_distributions\Ubuntu.tar"
 wsl --export "$DISTRIBUTION" "$DISTRIBUTION_FILE_PATH"
 
 # Import a distribution from a local into a location on disk
+$DISTRIBUTION="Ubuntu"
 $INSTALL_LOCATION="D:\wsl_distributions\$DISTRIBUTION"
+$DISTRIBUTION_FILE_PATH="D:\wsl_distributions\Ubuntu.tar"
 wsl --import "$DISTRIBUTION" "$INSTALL_LOCATION" "$DISTRIBUTION_FILE_PATH"
 
 # Remove an installed distribution
